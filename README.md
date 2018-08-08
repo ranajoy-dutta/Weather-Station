@@ -12,7 +12,8 @@ This data can collection of data fetched from the sensors. Broker is responsible
 
 ## FILE LIST :
 
-   |- templates
+...|- templates   
+
         >- index.html
    |- dbSetup.py
    |- README.txt
