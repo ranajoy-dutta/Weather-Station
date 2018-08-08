@@ -1,42 +1,35 @@
 # Weather-Station
 > Using Onion Omega 2+ and DHT-11
 
-***
-
 This is a Prototype model for IoT. This model is suitable for any IoT device that supports Python. The system can be integrated 
 to send data from the device to the cloud using MQTT protocol, which is a lightweight protocol for machine to machine communication.
 On the other end, the system can be integrated for receiving the data over cloud for further analysis.
 
-***
-
 ## How the system works :
-    The sender.py file is flashed into any micro controller like Arduino/Raspberry/Onion.<br/>
-    The sender.py file is responsible for sending/publishing the data/values/parameter as a payload to cloud/broker.<br/>
-    This data can collection of data fetched from the sensors. Broker is responsible for forwarding the same to all the
-    subscribed listeners. The receiver.py is one of the subscribed listener. Once the receiver receives this
-    payload/data, it can manage this data as per its needs like for just storing into data or for further analysis and
-    machine learning and many more purposes.
+The sender.py file is flashed into any micro controller like Arduino/Raspberry/Onion.<br/>
+The sender.py file is responsible for sending/publishing the data/values/parameter as a payload to cloud/broker.<br/>
+This data can collection of data fetched from the sensors. Broker is responsible for forwarding the same to all the subscribed listeners. The receiver.py is one of the subscribed listener. Once the receiver receives this payload/data, it can manage this data as per its needs like for just storing into data or for further analysis and machine learning and many more purposes.
 
 ## FILE LIST :
 
-...|- templates
-...     >- index.html
-...|- dbSetup.py
-...|- README.txt
-...|- mydb.db
-...|- receiver.py
-...|- sender.py
+   |- templates
+        >- index.html
+   |- dbSetup.py
+   |- README.txt
+   |- mydb.db
+   |- receiver.py
+   |- sender.py
 
 ## Dependencies in receiving server :-
-...python v3
-...flask
-...flask-mqtt
-...flask-socketio
-...eventlet
+1. python v3
+2. flask
+3. flask-mqtt
+4. flask-socketio
+5. eventlet
 
 ## Dependencies in Sending equipment :-
-...python v3
-...paho-mqtt
+1. python v3
+2. paho-mqtt
 
 ## Suitable Public Brokers for MQTT :-
 1. Eclipse - iot.eclipse.org
