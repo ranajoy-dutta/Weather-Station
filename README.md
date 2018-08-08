@@ -1,12 +1,14 @@
 # Weather-Station
 > Using Onion Omega 2+ and DHT-11
-<br/>
+
 ***
+
 This is a Prototype model for IoT. This model is suitable for any IoT device that supports Python. The system can be integrated 
 to send data from the device to the cloud using MQTT protocol, which is a lightweight protocol for machine to machine communication.
 On the other end, the system can be integrated for receiving the data over cloud for further analysis.
-<br/>
+
 ***
+
 ## How the system works :
     The sender.py file is flashed into any micro controller like Arduino/Raspberry/Onion.<br/>
     The sender.py file is responsible for sending/publishing the data/values/parameter as a payload to cloud/broker.<br/>
